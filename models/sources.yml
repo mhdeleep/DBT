@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: Assignment
+    schema: raw
+    tables:
+      - name: listing
+        identifier: RAW_LISTINGS
+
+      - name: host
+        identifier: RAW_HOSTS
+
+      - name: review
+        identifier: RAW_REVIEWS
+        loaded_at_field: date
