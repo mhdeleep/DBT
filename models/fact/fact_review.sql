@@ -3,7 +3,5 @@
 select *
 from {{ source("Assignment", "review") }}
 where
-    review_text is not null
-    {% if is_incremental() %}
-        and review_date > (select max(review_date) from {{ this }})
-    {% endif %}
+    comments is not null
+    {% if is_incremental() %} and date > (select max(date) from {{ this }}) {% endif %}

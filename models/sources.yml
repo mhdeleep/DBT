@@ -12,4 +12,4 @@ sources:
 
       - name: review
         identifier: RAW_REVIEWS
-        loaded_at_field: date
+        loaded_at_field: DATE

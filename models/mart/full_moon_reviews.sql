@@ -15,6 +15,6 @@ from fct_reviews r
 left join
     full_moon_dates fm
     on (
-        to_date(r.review_date)
+        to_date(r.date)
         = dateadd(day, 1, to_date(fm.full_moon_date, 'DD-MM-YYYY'))
     )
